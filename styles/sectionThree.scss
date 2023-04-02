@@ -1,0 +1,38 @@
+.section-three {
+  padding: 120px 0 105px 0;
+
+  .section-title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &-wrap {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+
+    .banner {
+      width: calc(33.33333% - 14px);
+      display: flex;
+      flex-direction: column;
+
+      .title-l {
+        margin-top: 20px;
+      }
+
+      .title-s {
+        margin-top: 12px;
+      }
+
+      .list {
+        margin-top: 18px;
+      }
+
+
+      .btn-l {
+        margin-top: 34px;
+      }
+    }
+  }
+}

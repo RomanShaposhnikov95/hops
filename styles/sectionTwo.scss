@@ -1,0 +1,32 @@
+.section-two {
+  padding: 40px 0;
+  background-color: #4F2384;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    &-item {
+      width: calc(25% - 15px);
+      padding: 30px 30px 28px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 8px;
+      text-align: center;
+
+      svg {
+        margin-bottom: 12px;
+      }
+
+      .title-s {
+        color: #FFFFFF;
+      }
+
+      .title-xs {
+        color: #FFFFFF;
+        opacity: 0.6;
+      }
+    }
+  }
+}

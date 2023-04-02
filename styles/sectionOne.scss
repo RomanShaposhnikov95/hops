@@ -1,0 +1,42 @@
+.section-one {
+  background-color: #F1F5F9;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 40px;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    padding: 63px 0 120px 0;
+  }
+
+  .title-m {
+    margin-top: 24px;
+  }
+
+  .btn-m {
+    margin-top: 50px;
+  }
+
+  &-img {
+    height: auto;
+    width: 50%;
+    max-width: 1100px;
+    bottom: 0;
+    position: relative;
+    max-height: 670px;
+
+
+    img {
+      position: absolute;
+      height: 100%;
+      bottom: -5px;
+      z-index: 10;
+    }
+
+
+  }
+}

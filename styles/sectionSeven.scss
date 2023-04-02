@@ -1,0 +1,104 @@
+.section-seven {
+  background-color: #F1F5F9;
+  padding: 220px 0 120px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-wrap {
+   width: 32.2%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+   &-content {
+      display: flex;
+     flex-direction: column;
+     row-gap: 24px;
+     &-item {
+        position: relative;
+       display: flex;
+       align-items: center;
+
+       &:after {
+         content: url("../assets/icons/ic-arrow-right-circle.svg");
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         height: 24px;
+         width: 24px;
+       }
+
+       .title-m {
+         display: inline-block;
+         margin-left: 36px;
+       }
+     }
+   }
+ }
+
+  &-window {
+    width: 57.6%;
+
+    &-wrap {
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      &-header {
+        width: 100%;
+        padding: 7px 16px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #EFEFF1;
+        justify-content: space-between;
+
+        &-dots {
+          display: flex;
+          column-gap: 6px;
+          .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #D1D5DB;
+            border-radius: 50%;
+          }
+        }
+
+        &-wrap {
+          width: calc(50% + 103px);
+          display: flex;
+          &-panel {
+            height: 26px;
+            width: 206px;
+            border: 1px solid #D1D5DB;
+            border-radius: 6px;
+            background-color: #F1F5F9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .title-xs {
+              color: #8D949A;
+              font-size: 11px;
+              font-weight: 500;
+              letter-spacing: -0.3px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+
+      &-content {
+
+      }
+    }
+
+
+  }
+
+
+}
+
+

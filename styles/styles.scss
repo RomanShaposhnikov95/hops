@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5,h6,ol,ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.title-xs {
+  font-size: 14px;
+  letter-spacing: -0.26px;
+  line-height: 20px;
+}
+
+
+.title-s {
+  color: #05132E;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.title-m {
+  color: #05132E;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  line-height: 28px;
+}
+
+.title-l {
+  color: #05132E;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  line-height: 31px;
+}
+
+.title-xl {
+  color: #05132E;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.55px;
+  line-height: 44px;
+}
+
+.title-xxl {
+  color: #10172A;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 64px;
+}
+
+.btn-s, .btn-m, .btn-l, .btn-s-gold, .btn-m-gold, .btn-l-gold, .btn-s-ghost, .btn-m-ghost, .btn-l-ghost {
+  background-color: #4F2384;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+
+  svg {
+    margin-right: 6px;
+  }
+}
+
+.btn-s, .btn-s-gold, .btn-s-ghost {
+  padding: 10px 16px;
+}
+
+.btn-m, .btn-m-gold, .btn-m-ghost{
+  padding: 15px 26px;
+}
+
+.btn-l, .btn-l-gold, .btn-l-ghost {
+  width: 100%;
+  padding: 15px 26px;
+}
+
+.btn-s-gold, .btn-m-gold, .btn-l-gold  {
+  color: #10172A;
+  background-color: #FFD000;
+}
+
+.btn-s-ghost, .btn-m-ghost, .btn-l-ghost {
+  color: #10172A;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(82,102,122,0.1), 0 2px 2px 0 rgba(209,213,219,0.2);
+}
+
+.section-title {
+  max-width: 580px;
+  .title-s {
+    color: #4F2384;
+    text-transform: uppercase;
+  }
+
+  .title-xxl {
+    margin-top: 24px;
+  }
+}
+
+.grow-wrap {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 2;
+}
+
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  li {
+    color: #05132E;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    line-height: 24px;
+    padding-left: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 20px;
+      width: 20px;
+      transform: translateY(-50%);
+      content: url("../assets/icons/ic-check-circle.svg");
+    }
+  }
+}
+

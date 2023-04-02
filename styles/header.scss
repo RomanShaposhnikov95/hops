@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 20px;
+  background-color: #F1F5F9;
+
+  &-list {
+    display: flex;
+    align-content: center;
+    column-gap: 40px;
+  }
+
+  &-wrap {
+    display: flex;
+    align-content: center;
+    column-gap: 6px;
+
+    button {
+      font-weight: 600;
+    }
+  }
+}

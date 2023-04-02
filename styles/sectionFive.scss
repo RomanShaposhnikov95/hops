@@ -1,0 +1,116 @@
+.section-five {
+  padding: 120px 0;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-title {
+    .title-xxl {
+      span {
+        color: #4F2384;
+        position: relative;
+        span {
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            display:block;
+            background-color: #FFFFFF;
+            border-radius: 80% 80% 0 0;
+            z-index: 10;
+          }
+
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -11px;
+          left: 0;
+          width: 100%;
+          height: 9px;
+          display:block;
+          background-color: #4F2384;
+          border-radius: 50% 50% 0 0;
+        }
+      }
+    }
+  }
+
+  &-content {
+    width: 49.1%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  .banner {
+    width: 40.7%;
+    background-color: #F1F5F9;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      .switch-field {
+        display: flex;
+        column-gap: 4px;
+        label {
+          width: calc(33.333% - 4px);
+        }
+      }
+
+      &-inputs {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+
+        .title-s {
+          color: #454D54;
+          font-weight: 500;
+        }
+
+        .price {
+          color: #10172A;
+        }
+      }
+
+    }
+
+    &-result {
+      display: flex;
+      justify-content: space-between;
+
+     .title-l {
+       color: #454D54;
+       font-weight: 500;
+      }
+
+      .price {
+        color: #4F2384;
+        font-weight: bold;
+      }
+    }
+  }
+}
