@@ -585,20 +585,19 @@ ul {
 .section-seven-wrap-content-item {
   position: relative;
   display: flex;
-  align-items: center;
-}
-.section-seven-wrap-content-item:after {
-  content: url("../assets/icons/ic-arrow-right-circle.svg");
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  height: 24px;
-  width: 24px;
+  border: none;
+  background-color: transparent;
+  flex-direction: column;
 }
 .section-seven-wrap-content-item .title-m {
   display: inline-block;
-  margin-left: 36px;
+  padding-left: 36px;
+}
+.section-seven-wrap-content-item .title-s {
+  color: #454D54;
+  margin-top: 8px;
+  padding-left: 36px;
+  display: none;
 }
 .section-seven-window {
   width: 57.6%;
@@ -815,6 +814,117 @@ ul {
   box-shadow: none;
   color: #4F2384;
   border: 1px solid #4F2384;
+}
+
+.circular {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  transform: scale(1.2);
+  display: none;
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 16px;
+  width: 16px;
+  margin: -8px 0 0 -8px;
+  background: #F1F5F9;
+  border-radius: 100%;
+}
+
+.circular .numb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #D2D6DC;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 20px, 20px, 10px);
+}
+
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 10px, 20px, 0px);
+  background: #3A0E7B;
+}
+
+.circle .left .progress {
+  z-index: 1;
+  animation: left var(--animation-duration) linear both;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+.circle .right .progress {
+  animation: right var(--animation-duration) linear both;
+  animation-delay: var(--animation-duration);
+}
+
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab-button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.tab-button .title-m:after {
+  content: url("../assets/icons/ic-arrow-right-circle.svg");
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.tab-button.active .title-m {
+  color: #3A0E7B;
+}
+.tab-button.active .title-m:after {
+  content: none;
+}
+.tab-button.active .circular {
+  display: block;
+}
+.tab-button.active .title-s {
+  display: block;
 }
 
 .footer {

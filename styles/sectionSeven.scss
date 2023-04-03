@@ -19,21 +19,20 @@
      &-item {
         position: relative;
        display: flex;
-       align-items: center;
-
-       &:after {
-         content: url("../assets/icons/ic-arrow-right-circle.svg");
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         left: 0;
-         height: 24px;
-         width: 24px;
-       }
+       border: none;
+       background-color: transparent;
+       flex-direction: column;
 
        .title-m {
          display: inline-block;
-         margin-left: 36px;
+         padding-left: 36px;
+       }
+
+       .title-s {
+         color: #454D54;
+         margin-top: 8px;
+         padding-left: 36px;
+         display: none;
        }
      }
    }

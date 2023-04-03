@@ -1,0 +1,39 @@
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+.tab-button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  .title-m {
+    &:after {
+      content: url("../assets/icons/ic-arrow-right-circle.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+.tab-button.active {
+  .title-m {
+    color: #3A0E7B;
+    &:after {
+      content: none;
+    }
+  }
+
+  .circular {
+    display: block;
+  }
+
+  .title-s {
+    display: block;
+  }
+}
