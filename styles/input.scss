@@ -35,3 +35,34 @@
     padding-right: 32px;
   }
 }
+
+.input-wrap-label {
+  .title-xs {
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+  }
+
+  .input-wrap {
+    margin-top: 6px;
+  }
+}
+
+.required {
+  .title-xs {
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: "*";
+      position: absolute;
+      right: -10px;
+      top: 0;
+      color: #B8143D;
+    }
+  }
+}
+

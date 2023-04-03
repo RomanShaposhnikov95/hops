@@ -1,0 +1,24 @@
+.page {
+  &-title {
+    padding: 50px 0 63px 0;
+    background: #200F35;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      opacity: 0.15;
+      background: linear-gradient(225.3deg, #FFFFFF 0%, rgba(255,255,255,0) 100%);
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+    }
+
+    .title-l {
+      color: #FFFFFF;
+    }
+  }
+}
