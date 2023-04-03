@@ -43,7 +43,7 @@
         display: flex;
         column-gap: 10px;
         .btn {
-            display: flex;
+          display: flex;
           align-items: center;
           border-radius: 8px;
           padding: 9px 23px;
@@ -90,6 +90,68 @@
     &:last-child {
       .btn-l {
         background-color: #10172A;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .auth {
+    &-form {
+      &-social {
+        flex-direction: column;
+        row-gap: 10px;
+
+        .title-s {
+          max-width: 100%;
+        }
+
+        &-wrap {
+          width: 100%;
+          .btn {
+            width: calc(50% - 5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .auth {
+    .container {
+     flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &-form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .auth {
+    &-form {
+
+
+      &-social {
+
+        &-wrap {
+          flex-direction: column;
+          row-gap: 10px;
+
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+
+      &-content {
+        .input-wrap-label {
+          width: 100%;
+        }
       }
     }
   }

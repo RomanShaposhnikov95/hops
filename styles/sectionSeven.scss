@@ -88,16 +88,26 @@
           }
         }
       }
+    }
+  }
+}
 
-      &-content {
 
-      }
+@media (max-width: 800px) {
+  .section-seven {
+    .container {
+      flex-direction: column;
+      row-gap: 20px;
     }
 
+    &-wrap {
+      width: 100%;
+    }
 
+    &-window {
+      width: 100%;
+    }
   }
-
-
 }
 
 

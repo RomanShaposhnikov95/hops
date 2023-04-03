@@ -88,11 +88,9 @@
 
     & + label {
       position: relative;
-      //display: inline-block;
       &:after {
         position: relative;
         content: "*";
-        //position: absolute;
         right: -3px;
         top: 0;
         color: #B8143D;

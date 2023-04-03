@@ -38,3 +38,14 @@
     flex-grow: 1;
   }
 }
+
+
+
+@media (max-width: 800px) {
+  .advertisement {
+    flex-direction: column;
+    row-gap: 20px;
+
+    text-align: center;
+  }
+}

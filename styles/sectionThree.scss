@@ -10,6 +10,8 @@
     margin-top: 60px;
     display: flex;
     column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .banner {
@@ -32,6 +34,16 @@
 
       .btn-l {
         margin-top: 34px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .section-three {
+    &-wrap {
+      .banner {
+        width: 100%;
       }
     }
   }

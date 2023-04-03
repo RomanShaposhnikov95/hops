@@ -3,6 +3,7 @@
   background-color: #4F2384;
   &-wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 20px;
 
@@ -26,6 +27,28 @@
       .title-xs {
         color: #FFFFFF;
         opacity: 0.6;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .section-two {
+    &-wrap {
+      &-item {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section-two {
+    &-wrap {
+      &-item {
+        width: 100%;
       }
     }
   }
