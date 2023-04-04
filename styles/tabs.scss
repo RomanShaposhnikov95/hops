@@ -21,6 +21,17 @@
     }
   }
 }
+
+.tab-small .tab-button {
+  .title-m {
+    &:after {
+      content: url("../assets/icons/ic-arrow-right-circle-18.svg");
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
 .tab-button.active {
   .title-m {
     color: #3A0E7B;

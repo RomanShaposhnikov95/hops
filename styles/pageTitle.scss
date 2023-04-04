@@ -1,9 +1,13 @@
 .page {
   &-title {
-    padding: 50px 0 63px 0;
+    padding: 50px 0 50px 0;
     background: #200F35;
-    text-align: center;
+    //text-align: center;
     position: relative;
+
+    &-center {
+      text-align: center;
+    }
 
     &:after {
       position: absolute;
@@ -19,6 +23,17 @@
 
     .title-l {
       color: #FFFFFF;
+    }
+
+    .title-xs {
+      opacity: 0.6;
+      color: #FFFFFF;
+      margin-top: 12px;
+    }
+
+    &-content {
+      margin-top: 30px;
+      display: flex;
     }
   }
 }

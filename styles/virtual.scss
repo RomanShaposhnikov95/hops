@@ -1,0 +1,127 @@
+.virtual {
+
+  .page-title-content {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &-filter {
+    .banner-item {
+
+      .title-s {
+        color: #FFFFFF;
+      }
+
+      .switch-field {
+        margin-top: 12px;
+        column-gap: 4px;
+
+        label {
+          border-radius: 5px;
+        }
+
+        input:checked + label {
+          background-color: #FFD000;
+        }
+      }
+    }
+  }
+
+  &-section-seven {
+    padding: 0;
+  }
+
+  &-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(16,23,42,0.14), 0 2px 2px 0 rgba(209,213,219,0.2);
+    position: relative;
+    top: -20px;
+
+    .section-seven-wrap {
+        width: 40%;
+        row-gap: 30px;
+
+
+      &-content {
+        row-gap: 12px;
+      }
+
+      .title-m {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        padding-left: 28px;
+        margin-top: 2px;
+      }
+
+      .title-s {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.3px;
+        padding-left: 32px;
+      }
+
+      .circular {
+        transform:scale(0.9);
+        left: 0;
+        .inner {
+          background-color: #FFFFFF;
+        }
+      }
+
+      .btn-m {
+        background-color: #F1F5F9;
+        color: #454D54;
+        padding: 10px 16px;
+      }
+    }
+
+    .section-seven-window {
+      width: 54.5%;
+      &-wrap {
+        &-content {
+          background-color: #F1F5F9;
+        }
+
+        &-header {
+          background-color: #F1F5F9;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .virtual {
+    &-wrap {
+      flex-direction: column;
+      row-gap: 20px;
+
+      .section-seven-wrap {
+        width: 100%;
+      }
+
+      .section-seven-window {
+        width: 100%;
+      }
+    }
+
+    .page-title-content {
+      flex-direction: column;
+      row-gap: 20px;
+
+      .switch-field {
+        max-width: 700px;
+        overflow-x: auto;
+      }
+    }
+  }
+}
