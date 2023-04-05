@@ -163,6 +163,25 @@
 
   &-small {
     background-color: #F1F5F9;
+
+
+    .footer-bottom {
+      &-list {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        li {
+          a {
+            color: #10172A;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
   }
 }
 
