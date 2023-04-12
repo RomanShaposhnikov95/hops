@@ -18,17 +18,6 @@
     flex-direction: column;
     align-items: flex-start;
 
-    &-tag {
-      border-radius: 6px;
-      background-color: #F1F5F9;
-      color: #454D54;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: -0.3px;
-      line-height: 20px;
-      padding: 2px 8px;
-    }
-
     .title-m {
       font-weight: 500;
       margin-top: 10px;
@@ -52,6 +41,19 @@
     .btn-l {
       padding: 10px 16px;
       margin-top: 20px;
+    }
+
+    &-wrap {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+
+
+      .btn-l, .btn-m-light {
+        margin: 0;
+      }
     }
   }
 }

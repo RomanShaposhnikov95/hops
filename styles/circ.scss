@@ -1,0 +1,40 @@
+.RadialProgress {
+  --hue: 220;
+  --holesize: 65%;
+  --track-bg: hsl(233 34% 92%);
+  block-size: 24px;
+  inline-size: 24px;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: white;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+  }
+}
+
+.RadialProgress::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  //z-index: -1;
+  //background: conic-gradient(hsl(271, 100%, 50%), hsl(271, 100%, 50%), hsl(271, 100%, 50%) var(--progress, 0%), var(--track-bg) var(--progress, 0%) 100%);
+  background: conic-gradient(hsl(141, 62%, 32%), hsl(141, 62%, 32%), hsl(141, 62%, 32%) var(--progress, 0%), var(--track-bg) var(--progress, 0%) 100%);
+}
+
+.circ {
+  input {
+    display: none;
+  }
+}

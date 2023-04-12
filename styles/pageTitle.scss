@@ -23,6 +23,10 @@
 
     .title-l {
       color: #FFFFFF;
+
+      span {
+        font-weight: 400;
+      }
     }
 
     .title-xs {
@@ -31,9 +35,24 @@
       margin-top: 12px;
     }
 
-    &-content {
+    .filter-content {
       margin-top: 30px;
-      display: flex;
     }
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+
+      .back {
+        display: block;
+        border: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 8px;
+        background-color: rgba(255,255,255,0.1);
+        margin-right: 15px;
+      }
+    }
+
   }
 }

@@ -5,28 +5,6 @@
     column-gap: 30px;
   }
 
-  &-filter {
-    .banner-item {
-
-      .title-s {
-        color: #FFFFFF;
-      }
-
-      .switch-field {
-        margin-top: 12px;
-        column-gap: 4px;
-
-        label {
-          border-radius: 5px;
-        }
-
-        input:checked + label {
-          background-color: #FFD000;
-        }
-      }
-    }
-  }
-
   &-section-seven {
     padding: 0;
   }
@@ -111,16 +89,6 @@
 
       .section-seven-window {
         width: 100%;
-      }
-    }
-
-    .page-title-content {
-      flex-direction: column;
-      row-gap: 20px;
-
-      .switch-field {
-        max-width: 700px;
-        overflow-x: auto;
       }
     }
   }
