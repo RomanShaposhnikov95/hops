@@ -54,5 +54,24 @@
       }
     }
 
+    &-column {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 70%;
+
+        .title-s {
+          margin-top: 10px;
+          color: #FFFFFF;
+          opacity: 0.6;
+        }
+      }
+    }
+
   }
+
+
 }

@@ -141,8 +141,13 @@ ul {
 
 .grow-wrap {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
   flex-grow: 2;
+  row-gap: 10px;
+  flex-direction: column;
+}
+.grow-wrap .btn-l-light {
+  padding: 15px 26px;
 }
 
 .list {
@@ -1040,6 +1045,27 @@ ul {
   color: #454D54;
 }
 
+.subscription-banner .title-s {
+  margin: 0;
+}
+.subscription-banner .title-s span {
+  text-decoration: underline;
+}
+.subscription-banner .list-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.subscription-banner .list-wrap {
+  margin-top: 20px;
+}
+.subscription-banner .title-m {
+  font-weight: 700;
+}
+.subscription-banner .grow-wrap {
+  margin-top: 50px;
+}
+
 .advertisement {
   padding: 65px 70px;
   display: flex;
@@ -1503,6 +1529,21 @@ ul {
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 15px;
+}
+.page-title-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-title-column-wrap {
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 70%;
+}
+.page-title-column-wrap .title-s {
+  margin-top: 10px;
+  color: #FFFFFF;
+  opacity: 0.6;
 }
 
 .footer {
@@ -2438,6 +2479,136 @@ ul {
 .warning-modal .advertisement {
   position: sticky;
   top: 0;
+}
+
+.subscription {
+  background-color: #F1F5F9;
+  padding-bottom: 70px;
+}
+.subscription .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  top: -20px;
+  padding: 40px;
+}
+.subscription .section-three-wrap {
+  margin: 0;
+}
+
+.subscription-form {
+  background-color: #F1F5F9;
+  padding-bottom: 70px;
+}
+.subscription-form .container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  position: relative;
+  top: -20px;
+}
+.subscription-form-content {
+  width: calc(67.8% - 15px);
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 8px;
+}
+.subscription-form-content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 30px;
+}
+.subscription-form-content-wrap .input-wrap-label {
+  width: calc(50% - 10px);
+}
+.subscription-form-content-wrap .switch-field {
+  width: 100%;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.subscription-form-content-wrap .switch-field label {
+  text-align: start;
+}
+.subscription-form-check {
+  width: calc(32.2% - 15px);
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 8px;
+  height: fit-content;
+}
+.subscription-form-check-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  padding: 20px 0;
+}
+.subscription-form-check-content-item {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: center;
+}
+.subscription-form-check-content-item .title-s {
+  opacity: 0.7;
+}
+.subscription-form-check-total {
+  padding-top: 20px;
+  border-top: 1px solid #05132E;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.object {
+  background-color: #F2F5F9;
+  padding-bottom: 120px;
+}
+.object-content {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+  top: -20px;
+}
+.object-content .not-content {
+  text-align: center;
+}
+.object-form {
+  width: 70%;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  top: -20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.object-form .switch-field {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+.object-form .switch-field label {
+  width: 100%;
+}
+.object-form-content {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+.object-form-content .input-wrap-label {
+  width: calc(50% - 10px);
+}
+.object-form-content .full {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

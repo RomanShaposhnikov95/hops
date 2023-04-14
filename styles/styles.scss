@@ -146,10 +146,16 @@ ul {
 
 .grow-wrap {
   display: flex;
-  align-items: flex-end;
+  //align-items: flex-start;
+  justify-content: flex-end;
   flex-grow: 2;
-}
+  row-gap: 10px;
+  flex-direction: column;
 
+  .btn-l-light {
+    padding: 15px 26px;
+  }
+}
 
 
 .list {
@@ -178,4 +184,5 @@ ul {
     }
   }
 }
+
 
