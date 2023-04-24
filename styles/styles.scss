@@ -183,6 +183,46 @@ ul {
       content: url("../assets/icons/ic-check-circle.svg");
     }
   }
+
+  &-wrap_item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .title-m {
+      font-weight: bold;
+    }
+  }
+}
+
+.system-main {
+  background-color: rgb(241, 245, 249);
+  min-height: 100vh;
 }
 
 
+.absolute-wrap {
+  width: 100%;
+  position: relative;
+  top: -20px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(16,23,42,0.14), 0 2px 2px 0 rgba(209,213,219,0.2);
+  background-color: #F2F5F9;
+
+
+
+  &-left {
+    width: 67.8%;
+    background-color: #FFFFFF;
+    border-radius: 8px 0 0 8px;
+  }
+
+  &-right {
+    width: 32.2%;
+    padding: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -179,128 +179,251 @@
 
 <div class="object">
     <div class="container">
-        <form class="object-form">
+        <form action="#" class="object-form needs-validation" novalidate>
             <p class="title-m">Dati par darijumu</p>
 
-            <div class="switch-field">
-                <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
-                <label for="radio-three">Pardodu</label>
-                <input type="radio" id="radio-four" name="switch-two" value="maybe" />
-                <label for="radio-four">Izireju</label>
-                <input type="radio" id="radio-five" name="switch-two" value="no" />
-                <label for="radio-five">Perku</label>
+            <div class="input-wrap-label full required">
+                <p class="title-xs">Tālrunis</p>
+                <div class="input-wrap">
+                    <div class="switch-field">
+                        <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
+                        <label for="radio-three">Pardodu</label>
+                        <input type="radio" id="radio-four" name="switch-two" value="maybe" />
+                        <label for="radio-four">Izireju</label>
+                        <input type="radio" id="radio-five" name="switch-two" value="no" />
+                        <label for="radio-five">Perku</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        Šis lauks ir obligāts
+                    </div>
+                </div>
             </div>
-
-            <div class="switch-field">
-                <input type="radio" id="radio-thre" name="switch" value="yes" checked/>
-                <label for="radio-thre">Dzivoklis</label>
-                <input type="radio" id="radio-fou" name="switch" value="maybe" />
-                <label for="radio-fou">Maja</label>
-                <input type="radio" id="radio-fiv" name="switch" value="no" />
-                <label for="radio-fiv">Komerctelpa</label>
-                <input type="radio" id="radio-six" name="switch" value="no" />
-                <label for="radio-six">Zeme</label>
-            </div>
-
-            <p class="title-m">Dati par objectu</p>
-
-            <div class="object-form-content">
-                <div class="input-wrap-label full required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
-                        </div>
+            <div class="input-wrap-label full required">
+                <p class="title-xs">Tālrunis</p>
+                <div class="input-wrap">
+                    <div class="switch-field">
+                        <input type="radio" id="radio-thre" name="switch" value="yes" checked/>
+                        <label for="radio-thre">Dzivoklis</label>
+                        <input type="radio" id="radio-fou" name="switch" value="maybe" />
+                        <label for="radio-fou">Maja</label>
+                        <input type="radio" id="radio-fiv" name="switch" value="no" />
+                        <label for="radio-fiv">Komerctelpa</label>
+                        <input type="radio" id="radio-six" name="switch" value="no" />
+                        <label for="radio-six">Zeme</label>
                     </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
-                        </div>
-                    </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
-                        </div>
-                    </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
-                        </div>
-                    </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
-                        </div>
+                    <div class="invalid-feedback">
+                        Šis lauks ir obligāts
                     </div>
                 </div>
             </div>
 
-            <div class="object-form-content">
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
+            <div class="object-form-item">
+                <p class="title-m">Dati par objectu</p>
+
+                <div class="object-form-item-content">
+                    <div class="input-wrap-label full required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <select class="select" name="cars" id="cars" required>
+                                <option selected disabled value="">Izvēlēties</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input-wrap-label required">
-                    <p class="title-xs">Tālrunis</p>
-                    <div class="input-wrap">
-                        <input class="input form-control" type="text" required>
-                        <div class="invalid-feedback">
-                            Šis lauks ir obligāts
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button class="btn-l-gold">Pievienot objectu</button>
+            <div class="object-form-item">
+                <p class="title-m">Objekta pamata dati</p>
+
+                <div class="object-form-item-content">
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="switch-field switch-collection">
+                                <input type="radio" id="one" name="one" value="1" checked/>
+                                <label for="one">1</label>
+                                <input type="radio" id="two" name="one" value="2" />
+                                <label for="two">2</label>
+                                <input type="radio" id="three" name="one" value="2" />
+                                <label for="three">3</label>
+                                <input type="radio" id="four" name="one" value="2" />
+                                <label for="four">4</label>
+                                <input type="radio" id="five" name="one" value="2" />
+                                <label for="five">5</label>
+                                <input type="radio" id="six" name="one" value="2" />
+                                <label for="six">6</label>
+                                <input type="radio" id="seven" name="one" value="2" />
+                                <label for="seven">7</label>
+                                <input type="radio" id="eight" name="one" value="2" />
+                                <label for="eight">8</label>
+                                <input type="radio" id="nine" name="one" value="2" />
+                                <label for="nine">9</label>
+                                <input type="radio" id="ten" name="one" value="2" />
+                                <label for="ten">10</label>
+                                <input type="radio" id="eleven" name="one" value="2" />
+                                <label for="eleven">11</label>
+                                <input type="radio" id="twelve" name="one" value="2" />
+                                <label for="twelve">12</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <input class="input form-control" type="text" required>
+                            <div class="switch-field switch-collection">
+                                <input type="radio" id="one-new" name="two" value="1" checked/>
+                                <label for="one-new">1</label>
+                                <input type="radio" id="two-new" name="two" value="2" />
+                                <label for="two-new">2</label>
+                                <input type="radio" id="three-new" name="two" value="3" />
+                                <label for="three-new">3</label>
+                                <input type="radio" id="four-new" name="two" value="4" />
+                                <label for="four-new">4</label>
+                                <input type="radio" id="five-new" name="two" value="5" />
+                                <label for="five-new">5</label>
+                                <input type="radio" id="six-new" name="two" value="6" />
+                                <label for="six-new">6</label>
+                                <input type="radio" id="seven-new" name="two" value="7" />
+                                <label for="seven-new">7</label>
+                                <input type="radio" id="eight-new" name="two" value="8" />
+                                <label for="eight-new">8</label>
+                                <input type="radio" id="nine-new" name="two" value="9" />
+                                <label for="nine-new">9</label>
+                                <input type="radio" id="ten-new" name="two" value="10" />
+                                <label for="ten-new">10</label>
+                                <input type="radio" id="eleven-new" name="two" value="11" />
+                                <label for="eleven-new">11</label>
+                                <input type="radio" id="twelve-new" name="two" value="12" />
+                                <label for="twelve-new">12</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <select class="select" name="cars" id="test" required>
+                                <option selected disabled value="">Izvēlēties</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Tālrunis</p>
+                        <div class="input-wrap">
+                            <select class="select" name="cars" id="test-two" required>
+                                <option selected disabled value="">Izvēlēties</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Vai objekts ir nodots ekspluatacija</p>
+                        <div class="input-wrap switch">
+                            <input type="radio" id="radio-exp-one" name="switch-three" value="yes" checked/>
+                            <label for="radio-exp-one">Ja</label>
+                            <input type="radio" id="radio-exp-two" name="switch-three" value="maybe" />
+                            <label for="radio-exp-two">Ne</label>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap-label required">
+                        <p class="title-xs">Vai objekts pardodas kopa ar kustamo mantu?</p>
+                        <div class="input-wrap switch">
+                            <input type="radio" id="radio-exp-three" name="switch-four" value="yes" checked/>
+                            <label for="radio-exp-one">Ja</label>
+                            <input type="radio" id="radio-exp-four" name="switch-four" value="maybe" />
+                            <label for="radio-exp-two">Ne</label>
+                            <div class="invalid-feedback">
+                                Šis lauks ir obligāts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="submit" class="btn-l-gold">Pievienot objectu</button>
 
         </form>
     </div>
@@ -327,5 +450,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/header.js"></script>
 <script src="js/newTab.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>
