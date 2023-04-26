@@ -200,6 +200,22 @@ ul {
   min-height: 100vh;
 }
 
+.avatar {
+  background-color: #200F35;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  letter-spacing: -0.3px;
+  line-height: 17px;
+  text-align: center;
+  border-radius: 50%;
+}
 
 .absolute-wrap {
   width: 100%;
