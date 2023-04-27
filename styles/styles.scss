@@ -35,14 +35,14 @@ ul {
 }
 
 
-.title-xs {
+.title-xs , .link-tag{
   font-size: 14px;
   letter-spacing: -0.26px;
   line-height: 20px;
 }
 
 
-.title-s {
+.title-s, .link {
   color: #05132E;
   font-size: 16px;
   letter-spacing: -0.3px;
@@ -241,4 +241,12 @@ ul {
     display: flex;
     flex-direction: column;
   }
+}
+
+.link {
+
+}
+
+.link-tag {
+  color: #4F2384;
 }

@@ -33,13 +33,13 @@ ul {
   margin: 0 auto;
 }
 
-.title-xs {
+.title-xs, .link-tag {
   font-size: 14px;
   letter-spacing: -0.26px;
   line-height: 20px;
 }
 
-.title-s {
+.title-s, .link {
   color: #05132E;
   font-size: 16px;
   letter-spacing: -0.3px;
@@ -226,6 +226,10 @@ ul {
   height: fit-content;
   display: flex;
   flex-direction: column;
+}
+
+.link-tag {
+  color: #4F2384;
 }
 
 .auth-header-top {
@@ -3054,6 +3058,85 @@ ul {
 .chat-content-show-field textarea {
   width: 100%;
   height: 150px;
+}
+
+.blog .absolute-wrap-left {
+  padding: 0 40px;
+}
+.blog .absolute-wrap-left .blog-section {
+  padding: 30px 0;
+  border-bottom: 1px solid #ECEDEF;
+}
+.blog .absolute-wrap-left .blog-section:last-child {
+  border: none;
+}
+.blog .absolute-wrap-left .blog-section:last-child .blog-section-header {
+  margin-bottom: 0;
+}
+.blog .absolute-wrap-left .blog-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blog .absolute-wrap-left .blog-section-news {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.blog .absolute-wrap-left .blog-section-news-item {
+  width: calc(33.3333333% - 14px);
+  display: flex;
+  flex-direction: column;
+}
+.blog .absolute-wrap-left .blog-section-news-item .img {
+  width: 100%;
+  height: 150px;
+  background-color: #8D949A;
+  margin-bottom: 20px;
+}
+.blog .absolute-wrap-left .blog-section-news-item .title-xs {
+  margin-top: 10px;
+}
+.blog .absolute-wrap-left .blog-section-diss .advertisement {
+  margin-top: 6px;
+}
+.blog .absolute-wrap-left .blog-section-diss .advertisement-wrap-flex {
+  display: flex;
+  column-gap: 10px;
+}
+.blog .absolute-wrap-left .blog-section-diss .advertisement-wrap-flex .title-l:last-child {
+  color: #10172A;
+}
+.blog .absolute-wrap-right .blog-filter {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.blog .absolute-wrap-right .blog-filter .title-m {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.blog .absolute-wrap-right .blog-filter-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+.blog .absolute-wrap-right .blog-filter-wrap .title-s {
+  border: none;
+  background-color: transparent;
+  text-align: start;
+  padding: 0;
+}
+.blog .absolute-wrap-right .blog-filter-wrap .title-s span {
+  margin-left: 3px;
+}
+.blog .absolute-wrap-right .blog-filter .btn-l-gold {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
