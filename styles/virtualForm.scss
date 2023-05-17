@@ -250,7 +250,7 @@
         padding: 10px 16px;
         font-weight: 500;
 
-        img {
+        svg {
           margin-right: 8px;
         }
       }
@@ -359,10 +359,13 @@
     &-button {
       border-radius: 8px !important;
       background-color: #F1F5F9;
+      box-shadow: none;
 
       &:not(.collapsed) {
         box-shadow: none;
+        color: #4F2384;
       }
+
 
       &:not(.collapsed)::after {
         background-image: url("../assets/icons/ic-small-arrow-down.svg");

@@ -117,7 +117,11 @@
 
       &:checked {
         background-color: #FFD000;
-        border-color: #D1D5DB;
+        border-color: #FFD000;
+      }
+
+      &:checked[type=checkbox] {
+
       }
 
       &:focus {

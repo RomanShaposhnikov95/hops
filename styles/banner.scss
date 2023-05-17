@@ -13,28 +13,28 @@
 }
 
 .subscription-banner {
+  padding: 30px;
+
+  &-title {
+    max-width: 200px;
+  }
+
+  .title-l {
+    margin-bottom: 0;
+  }
+
   .title-s {
-    margin: 0;
     span {
       text-decoration: underline;
     }
   }
 
-  .list-wrap {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .list-wrap {
-    margin-top: 20px;
-  }
 
   .title-m {
    font-weight: 700;
   }
 
   .grow-wrap {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }

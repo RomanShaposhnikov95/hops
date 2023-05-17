@@ -74,7 +74,7 @@
       font-size: 13px;
       letter-spacing: -0.3px;
       line-height: 22px;
-
+      font-weight: 400;
     }
 
     .title-s {
@@ -85,6 +85,10 @@
       line-height: 28px;
       opacity: 1;
     }
+  }
+
+  svg {
+    margin-right: 14px;
   }
 
 }
@@ -138,6 +142,7 @@
   box-shadow: 0 0 0 1px rgba(16,23,42,0.14), 0 2px 2px 0 rgba(209,213,219,0.2);
   padding: 20px 30px;
   column-gap: 20px;
+  position: relative;
 
   &-content {
     display: flex;
@@ -164,6 +169,29 @@
       align-items: flex-end;
     }
   }
+
+  .remove {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+
+    &:after {
+      position: absolute;
+      content: url("../assets/img/ic-remove.png");
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
 
 .advertisement-small-column {
@@ -171,6 +199,7 @@
   align-items: flex-start;
   row-gap: 10px;
 }
+
 
 
 

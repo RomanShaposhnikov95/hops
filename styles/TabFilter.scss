@@ -35,6 +35,8 @@
     .switch-field {
       label {
         color: #454D54;
+        border-radius: 8px;
+        height: 40px;
       }
 
       input:checked + label {
