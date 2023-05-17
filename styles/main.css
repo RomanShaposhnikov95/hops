@@ -270,12 +270,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px;
 }
 .auth-header-bottom-wrap {
   display: flex;
   justify-content: space-between;
   column-gap: 58px;
+  align-items: center;
 }
 .auth-header-bottom-wrap-list ul {
   display: flex;
@@ -283,7 +284,7 @@ ul {
   column-gap: 32px;
 }
 .auth-header-bottom-wrap-list ul li {
-  padding: 12px 0;
+  padding: 24px 0;
   position: relative;
 }
 .auth-header-bottom-wrap-list ul li a {
@@ -413,6 +414,9 @@ ul {
   font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 22px;
+}
+.not-auth .auth-header-bottom-wrap-list ul li {
+  padding: 28px 0;
 }
 .not-auth .auth-header-bottom-wrap-list-menu {
   display: none;
