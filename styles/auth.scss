@@ -90,6 +90,10 @@
     &:last-child {
       .btn-l {
         background-color: #10172A;
+
+        &:hover {
+          background-color: #132140;
+        }
       }
     }
   }

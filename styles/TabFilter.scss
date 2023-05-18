@@ -19,6 +19,7 @@
 
         input:checked + label {
           background-color: #FFD000;
+          border: 1px solid #FFD000;
         }
       }
     }
@@ -42,6 +43,7 @@
       input:checked + label {
         color: #FFFFFF;
         background-color: #05132E;
+        border: 1px solid #05132E;
       }
     }
   }

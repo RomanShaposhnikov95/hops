@@ -262,6 +262,11 @@
       flex-direction: column;
       row-gap: 60px;
       position: relative;
+
+      &-wrap {
+        position: relative;
+      }
+
       &-item {
         display: flex;
         flex-direction: column;
@@ -297,19 +302,21 @@
       }
 
       .extra {
-
         &-title {
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding-bottom: 14px;
           border-bottom: 1px solid rgba(218, 219, 223, 0.5);
+          //position: relative;
+          //z-index: 10;
         }
 
         &-content {
           display: flex;
           flex-direction: column;
           row-gap: 6px;
+          position: relative;
 
           .advertisement {
             margin-top: 0;
@@ -375,8 +382,6 @@
         background-image: url("../assets/icons/ic-small-arrow-down.svg");
       }
     }
-
-
   }
 }
 

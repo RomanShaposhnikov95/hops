@@ -58,6 +58,11 @@
             a {
               opacity: 0.6;
               color: #FFFFFF;
+
+              &:hover {
+                transition: all 0.3s;
+                opacity: 1;
+              }
             }
 
 
