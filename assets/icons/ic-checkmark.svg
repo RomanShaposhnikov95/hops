@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic-checkmark</title>
+    <g id="Dizains" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Log-In" transform="translate(-250.000000, -685.000000)" fill="#10172A">
+            <g id="Content" transform="translate(210.000000, 201.000000)">
+                <g id="Form" transform="translate(40.000000, 224.000000)">
+                    <g id="Icon-/-Check-Circle" transform="translate(0.000000, 260.000000)">
+                        <path d="M14.2928932,6.29289322 C14.6834175,5.90236893 15.3165825,5.90236893 15.7071068,6.29289322 C16.0976311,6.68341751 16.0976311,7.31658249 15.7071068,7.70710678 L9.70710678,13.7071068 C9.31658249,14.0976311 8.68341751,14.0976311 8.29289322,13.7071068 L6.29289322,11.7071068 C5.90236893,11.3165825 5.90236893,10.6834175 6.29289322,10.2928932 C6.68341751,9.90236893 7.31658249,9.90236893 7.70710678,10.2928932 L9,11.585 L14.2928932,6.29289322 Z" id="Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

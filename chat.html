@@ -183,7 +183,7 @@
                     <p class="title-m">Sarakste</p>
                 </div>
                 <div class="users">
-                    <div class="users-item">
+                    <div id="button1" class="users-item">
                         <div class="users-item-content">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>BAE86477-32F7-4BB2-A158-79E3B2B35FF7</title>
@@ -227,7 +227,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="users-item length active">
+                    <div id="button2" class="users-item length">
                         <div class="users-item-content">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>BAE86477-32F7-4BB2-A158-79E3B2B35FF7</title>
@@ -271,7 +271,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="users-item">
+                    <div id="button3" class="users-item">
                         <div class="users-item-content">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>4D5B1B32-940E-43F3-9610-314CEF4BC25B</title>
@@ -316,7 +316,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="users-item">
+                    <div id="button4" class="users-item">
                         <div class="users-item-content">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>4D5B1B32-940E-43F3-9610-314CEF4BC25B</title>
@@ -361,7 +361,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="users-item">
+                    <div id="button5" class="users-item">
                         <div class="users-item-content">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>4D5B1B32-940E-43F3-9610-314CEF4BC25B</title>
@@ -410,39 +410,41 @@
             </div>
             <div class="absolute-wrap-left">
                 <div class="chat-content">
-                    <div class="chat-content-none d-none">
+                    <div class="chat-content-none">
                         <p class="title-m">Atveriet saraksti</p>
                     </div>
 
-                    <div class="chat-content-show">
+                    <div class="chat-content-show d-none">
                         <div class="chat-content-show-header">
-                            <svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <title>BB973E79-2BA5-4288-8A6B-EF1448329509</title>
-                                <g id="Dizains" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Chat" transform="translate(-607.000000, -244.000000)">
-                                        <g id="Content" transform="translate(210.000000, 227.000000)">
-                                            <g id="Chat" transform="translate(380.000000, 0.000000)">
-                                                <g id="icon" transform="translate(17.000000, 17.000000)">
-                                                    <rect id="base" fill="#F2F5F9" x="0" y="0" width="30" height="30" rx="8"></rect>
-                                                    <path d="M16.2928932,10.2928932 C16.6834175,9.90236893 17.3165825,9.90236893 17.7071068,10.2928932 C18.0976311,10.6834175 18.0976311,11.3165825 17.7071068,11.7071068 L14.415,15 L17.7071068,18.2928932 C18.0675907,18.6533772 18.0953203,19.2206082 17.7902954,19.6128994 L17.7071068,19.7071068 C17.3165825,20.0976311 16.6834175,20.0976311 16.2928932,19.7071068 L12.2928932,15.7071068 C11.9023689,15.3165825 11.9023689,14.6834175 12.2928932,14.2928932 L16.2928932,10.2928932 Z" id="arrow" fill="#3D4D5C" fill-rule="nonzero"></path>
+                            <button class="closeChat">
+                                <svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>BB973E79-2BA5-4288-8A6B-EF1448329509</title>
+                                    <g id="Dizains" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Chat" transform="translate(-607.000000, -244.000000)">
+                                            <g id="Content" transform="translate(210.000000, 227.000000)">
+                                                <g id="Chat" transform="translate(380.000000, 0.000000)">
+                                                    <g id="icon" transform="translate(17.000000, 17.000000)">
+                                                        <rect id="base" fill="#F2F5F9" x="0" y="0" width="30" height="30" rx="8"></rect>
+                                                        <path d="M16.2928932,10.2928932 C16.6834175,9.90236893 17.3165825,9.90236893 17.7071068,10.2928932 C18.0976311,10.6834175 18.0976311,11.3165825 17.7071068,11.7071068 L14.415,15 L17.7071068,18.2928932 C18.0675907,18.6533772 18.0953203,19.2206082 17.7902954,19.6128994 L17.7071068,19.7071068 C17.3165825,20.0976311 16.6834175,20.0976311 16.2928932,19.7071068 L12.2928932,15.7071068 C11.9023689,15.3165825 11.9023689,14.6834175 12.2928932,14.2928932 L16.2928932,10.2928932 Z" id="arrow" fill="#3D4D5C" fill-rule="nonzero"></path>
+                                                    </g>
                                                 </g>
                                             </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
+                                </svg>
+                            </button>
                             <div class="chat-content-show-header-wrap">
                                 <p class="title-m">Juridiska konsultacija</p>
                                 <p class="title-s">Izire, Komercija</p>
                             </div>
                         </div>
 
-                        <div class="chat-content-show-null d-none">
+                        <div class="chat-content-show-null">
                             <p class="title-l">Ši konsultācija jums nav uzsakta</p>
-                            <button class="btn-m">Sakt konsultacija</button>
+                            <button class="btn-m startChat">Sakt konsultacija</button>
                         </div>
 
-                        <div class="chat-content-show-wrap">
+                        <div class="chat-content-show-wrap d-none">
                             <div class="chat-content-show-window">
                                 <div class="chat-content-show-window-item message">
                                     <div class="chat-content-show-window-item-wrap">
@@ -518,8 +520,12 @@
 </footer>
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/header.js"></script>
 <script src="js/newTab.js"></script>
+<script src="js/chat.js"></script>
 </body>
 </html>

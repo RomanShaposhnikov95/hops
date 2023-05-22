@@ -167,6 +167,10 @@
   border-color: #D1D5DB;
 }
 
+.form-check-input:checked[type=checkbox] {
+  background-image: url("../assets/icons/ic-checkmark.svg")
+}
+
 
 .required {
   .form-check-label {

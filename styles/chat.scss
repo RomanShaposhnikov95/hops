@@ -103,6 +103,11 @@
         align-items: center;
        column-gap: 10px;
 
+        .closeChat {
+          border: none;
+          background-color: transparent;
+        }
+
         &-wrap {
           .title-m {
             color: #05132E;
@@ -135,6 +140,13 @@
         row-gap: 15px;
         display: flex;
         flex-direction: column;
+        max-height: 510px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        &::-webkit-scrollbar { width: 0; }
+
+
         &-item {
           display: flex;
           justify-content: flex-end;

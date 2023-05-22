@@ -1481,6 +1481,10 @@ ul {
   border-color: #D1D5DB;
 }
 
+.form-check-input:checked[type=checkbox] {
+  background-image: url("../assets/icons/ic-checkmark.svg");
+}
+
 .required .form-check-label {
   position: relative;
 }
@@ -1938,22 +1942,18 @@ ul {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 18px;
-  padding: 12px 12px 12px 38px;
+  padding: 12px;
   position: relative;
   border-radius: 8px;
   background-color: #FEF2F2;
   margin: 30px 40px -10px 40px;
   display: none;
 }
-.error-line:after {
-  content: url("../assets/icons/ic-form-error.png");
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
 
 .error-validated .error-line {
-  display: block;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .virtual .page-title-content {
@@ -2443,7 +2443,7 @@ ul {
   margin: 0;
   border: none;
 }
-.virtual-form-panel-progress-steps-item .accordion-item .accordion-body .accordion-inside .accordion-item .accordion-body li span {
+.virtual-form-panel-progress-steps-item .accordion-item .accordion-body .accordion-inside .accordion-item .accordion-body li a {
   opacity: 0.7;
   color: #454D54;
   font-size: 14px;
@@ -2468,7 +2468,7 @@ ul {
   list-style-type: disc;
   color: #4F2384;
 }
-.virtual-form-panel-progress-steps-item .accordion-item .accordion-body .accordion-inside .accordion-item .accordion-body .active span {
+.virtual-form-panel-progress-steps-item .accordion-item .accordion-body .accordion-inside .accordion-item .accordion-body .active a {
   color: #4F2384;
   font-weight: 500;
   opacity: 1;
@@ -3188,6 +3188,10 @@ ul {
   align-items: center;
   column-gap: 10px;
 }
+.chat-content-show-header .closeChat {
+  border: none;
+  background-color: transparent;
+}
 .chat-content-show-header-wrap .title-m {
   color: #05132E;
   font-size: 14px;
@@ -3214,6 +3218,13 @@ ul {
   row-gap: 15px;
   display: flex;
   flex-direction: column;
+  max-height: 510px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.chat-content-show-window::-webkit-scrollbar {
+  width: 0;
 }
 .chat-content-show-window-item {
   display: flex;

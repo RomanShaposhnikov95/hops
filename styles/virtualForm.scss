@@ -162,7 +162,7 @@
                     border: none;
 
                     li {
-                      span {
+                      a {
                         opacity: 0.7;
                         color: #454D54;
                         font-size: 14px;
@@ -190,7 +190,7 @@
                     .active {
                       list-style-type: disc;
                       color: #4F2384;
-                      span {
+                      a {
                         color: #4F2384;
                         font-weight: 500;
                         opacity: 1;

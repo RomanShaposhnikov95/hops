@@ -4,24 +4,20 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 18px;
-  padding: 12px 12px 12px 38px;
+  padding: 12px;
   position: relative;
   border-radius: 8px;
   background-color: #FEF2F2;
   margin: 30px 40px -10px 40px;
   display: none;
 
-  &:after {
-    content: url("../assets/icons/ic-form-error.png");
-    position: absolute;
-    top: 12px;
-    left: 12px;
-  }
 }
 
 .error-validated {
   .error-line {
-    display: block;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
   }
 }
 
