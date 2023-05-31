@@ -85,3 +85,59 @@
     }
   }
 }
+
+
+@media (max-width: 700px) {
+  .absolute-wrap-left {
+
+    .doc-wrap-content {
+
+
+      .advertisement-doc {
+
+        &-content {
+          flex-direction: column;
+          align-items: unset;
+        }
+
+
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .absolute-wrap-left {
+
+    .doc-wrap-content {
+      .advertisement-doc {
+
+        .advertisement-wrap {
+
+          .title-s {
+            flex-direction: column;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 475px) {
+  .absolute-wrap-left {
+
+    .doc-wrap-content {
+      .advertisement-doc {
+
+        &-content {
+          &-wrap {
+            flex-direction: column;
+            row-gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

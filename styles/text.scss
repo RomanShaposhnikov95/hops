@@ -190,13 +190,17 @@ h5.text-title  {
   }
 
   &-table {
+    width: 100%;
     margin-top: 80px;
 
+  &-wrap {
+    overflow: auto;
     table {
       margin-top: 40px;
       font-family: arial, sans-serif;
       border-collapse: collapse;
       width: 100%;
+      min-width: 980px;
 
       td, th {
         border-top: 1px solid #DCDEE4;
@@ -216,20 +220,20 @@ h5.text-title  {
 
         tr {
           border-radius: 8px;
-         th {
-           background-color: #322346;
+          th {
+            background-color: #322346;
 
-           color: #FFFFFF;
-           font-weight: 400;
+            color: #FFFFFF;
+            font-weight: 400;
 
-           &:first-child {
-             border-radius: 8px 0 0 0;
-           }
+            &:first-child {
+              border-radius: 8px 0 0 0;
+            }
 
-           &:last-child {
-             border-radius: 0 8px 0 0;
-           }
-         }
+            &:last-child {
+              border-radius: 0 8px 0 0;
+            }
+          }
         }
       }
 
@@ -249,6 +253,11 @@ h5.text-title  {
         }
       }
     }
-
   }
+  }
+}
+
+
+@media (max-width: 1000px) {
+
 }

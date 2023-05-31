@@ -52,6 +52,9 @@ ul {
   letter-spacing: -0.3px;
   line-height: 24px;
   font-weight: 500;
+  display: inline-block;
+
+
 }
 
 .title-m {
@@ -295,5 +298,22 @@ ul {
     width: 5px;
     background-color: #4F2384;
 
+  }
+}
+
+
+@media (max-width: 775px) {
+  .system-main {
+    .absolute-wrap  {
+      flex-direction: column;
+
+      &-left {
+        width: 100%;
+      }
+
+      &-right {
+        width: 100%;
+      }
+    }
   }
 }

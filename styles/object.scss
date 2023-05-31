@@ -51,9 +51,6 @@
         }
       }
     }
-
-
-
   }
 
   &-form {
@@ -103,3 +100,71 @@
     }
   }
 }
+
+@media (max-width: 1100px) {
+  .object {
+    &-form {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 950px) {
+  .object {
+      &-content {
+        &-wrap {
+
+          .banner {
+            width: calc(50% - 10px);
+          }
+        }
+      }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .object {
+    &-content {
+      &-wrap {
+
+        .banner {
+          width: 100%;
+        }
+      }
+    }
+
+    &-form {
+      &-item {
+        &-content {
+          .input-wrap-label {
+            width: 100%;
+          }
+        }
+
+      }
+
+      .switch-field  {
+        flex-wrap: wrap;
+        row-gap: 10px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .object {
+    &-content {
+      &-wrap {
+
+        .banner {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+

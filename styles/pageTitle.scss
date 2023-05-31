@@ -53,7 +53,7 @@
       &-wrap {
         align-items: flex-start;
         flex-direction: column;
-        max-width: 70%;
+        //max-width: 70%;
 
         .title-s {
           margin-top: 10px;
@@ -80,6 +80,18 @@
     }
 
   }
-
-
 }
+
+
+@media (max-width: 650px) {
+  .page {
+    &-title {
+        &-column {
+          flex-direction: column;
+          row-gap: 10px;
+          align-items: flex-start;
+        }
+    }
+  }
+}
+
