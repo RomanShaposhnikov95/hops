@@ -1,4 +1,5 @@
 .chat {
+  min-height: 766px;
   .absolute-wrap-right {
     padding: 0;
 
@@ -13,6 +14,8 @@
     .users {
       display: flex;
       flex-direction: column;
+      max-height: 702px;
+      overflow-y: auto;
       &-item {
         display: flex;
         align-items: center;
@@ -85,6 +88,7 @@
 
   &-content {
     height: 100%;
+
     &-none {
       height: 100%;
       display: flex;
@@ -133,6 +137,7 @@
         row-gap: 10px;
         align-items: center;
         justify-content: center;
+        text-align: center;
       }
 
       &-window {
@@ -310,4 +315,43 @@
 .status-close {
   background-color: #D1D5DB;
   color: #3D4D5C;
+}
+
+
+@media (max-width: 775px) {
+  .system-main {
+    .chat {
+      flex-direction: row;
+      .absolute-wrap-right {
+        width: 45%;
+      }
+
+      .absolute-wrap-left {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .system-main {
+    .chat {
+      position: relative;
+      overflow: hidden;
+      .absolute-wrap-right {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .absolute-wrap-left {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        border-radius: 8px;
+        transition: all 0.1s;
+      }
+    }
+  }
 }

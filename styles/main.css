@@ -3319,6 +3319,9 @@ ul {
     flex-direction: column;
   }
 }
+.chat {
+  min-height: 766px;
+}
 .chat .absolute-wrap-right {
   padding: 0;
 }
@@ -3332,6 +3335,8 @@ ul {
 .chat .absolute-wrap-right .users {
   display: flex;
   flex-direction: column;
+  max-height: 702px;
+  overflow-y: auto;
 }
 .chat .absolute-wrap-right .users-item {
   display: flex;
@@ -3432,6 +3437,7 @@ ul {
   row-gap: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .chat-content-show-window {
   padding: 30px;
@@ -3586,6 +3592,36 @@ ul {
   color: #3D4D5C;
 }
 
+@media (max-width: 775px) {
+  .system-main .chat {
+    flex-direction: row;
+  }
+  .system-main .chat .absolute-wrap-right {
+    width: 45%;
+  }
+  .system-main .chat .absolute-wrap-left {
+    width: 55%;
+  }
+}
+@media (max-width: 650px) {
+  .system-main .chat {
+    position: relative;
+    overflow: hidden;
+  }
+  .system-main .chat .absolute-wrap-right {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .system-main .chat .absolute-wrap-left {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    border-radius: 8px;
+    transition: all 0.1s;
+  }
+}
 .blog .absolute-wrap-left {
   padding: 0 40px;
 }
