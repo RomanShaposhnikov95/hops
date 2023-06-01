@@ -14,3 +14,11 @@
   border-radius: 6px;
   background-color: #F1F5F9;
 }
+
+
+@media (max-width: 800px) {
+  .tags {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

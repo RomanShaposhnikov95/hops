@@ -127,7 +127,7 @@
 
 @media (max-width: 475px) {
   .absolute-wrap-left {
-
+    border-radius: 8px;
     .doc-wrap-content {
       .advertisement-doc {
 
@@ -138,6 +138,14 @@
           }
         }
       }
+    }
+  }
+  .cart .absolute-wrap-right {
+    padding: 0;
+    .cart-check {
+      box-shadow: unset;
+      border: none;
+      margin-top: 20px;
     }
   }
 }

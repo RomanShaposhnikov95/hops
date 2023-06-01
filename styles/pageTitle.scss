@@ -54,6 +54,7 @@
         align-items: flex-start;
         flex-direction: column;
         //max-width: 70%;
+        width: 100%;
 
         .title-s {
           margin-top: 10px;
@@ -91,7 +92,31 @@
           row-gap: 10px;
           align-items: flex-start;
         }
+
     }
   }
 }
+
+//@media (max-width: 435px) {
+//  .page {
+//    &-title {
+//
+//      &-column {
+//
+//        &-wrap {
+//          .filter-content {
+//            &-wrap {
+//              .banner-item {
+//                overflow: auto;
+//                .switch-field {
+//                }
+//              }
+//            }
+//          }
+//        }
+//      }
+//
+//    }
+//  }
+//}
 
